@@ -1,0 +1,59 @@
+{
+  "name": "sitiboxApp",
+  "version": "1.0.0",
+  "description": "client patient,doctor consultation platform",
+  "engines": {
+    "node": "14.17.6",
+    "npm": "7.24.1"
+  },
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "data:destroy": "node backend/seeder -d",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "keywords": [
+    "consultation",
+    "git remote add origin git@github.com:Olaoluwa402/sitibox9jaclinic.gitgit remote add origin git@github.com:Olaoluwa402/sitibox9jaclinic.git"
+  ],
+  "author": "Olaoluwa IBUKUN",
+  "license": "ISC",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.10.7",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.25.1",
+    "colors": "^1.4.0",
+    "cookie": "^0.4.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "csurf": "^1.11.0",
+    "dayjs": "^1.10.6",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-async-handler": "^1.1.4",
+    "express-validator": "^6.12.1",
+    "googleapis": "^74.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.6.1",
+    "nodemailer-mailgun-transport": "^2.1.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "react-html-parser": "^2.0.2",
+    "socket.io": "^4.1.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
+}
