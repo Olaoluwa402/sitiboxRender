@@ -1,0 +1,55 @@
+.container {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.verifyHeader,
+.verifyBody {
+    margin-bottom: 2rem;
+}
+
+.verifyHeader h2 {
+    font-size: 2rem;
+}
+
+.newCode {
+    cursor: pointer;
+    color: blue;
+}
+
+.formControl {
+    display: flex;
+    justify-content: center;
+}
+
+.formControl input {
+    flex: 1;
+    padding: 0.8rem;
+}
+
+.formControl button {
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+
+.formControl button:hover,
+.formControl button:focus {
+    background: var(--skyBlue);
+    border: 1px solid var(--mainWhite);
+    color: var(--primaryColor);
+}

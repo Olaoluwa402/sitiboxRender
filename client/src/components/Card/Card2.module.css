@@ -1,0 +1,103 @@
+.card {
+    width: 250px;
+    max-width: 100%;
+    height: 450px;
+    background-color: var(--mainWhite);
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px 1px #000000;
+    overflow: hidden;
+    margin: auto;
+}
+
+.upperContainer {
+    height: 100px;
+    background: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+}
+
+.imageContainer{
+    position: relative;
+}
+
+.verify{
+    color:green;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 3.5rem;
+}
+
+.imageContainer img {
+    background: var(--mainWhite);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    transform: translate(33.5%, 50px);
+}
+
+.cardImage {
+    border: 2px solid var(--primaryColor);
+}
+
+.lowerContainer {
+    height: 300px;
+    background: var(--mainWhite);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.lowerContainer h5,
+.lowerContainer h6
+ p {
+    margin: 0;
+    padding: 0.2rem;
+}
+
+.lowerContainer h5 {
+    color: var(--mainDark);
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+
+.lowerContainer h6 {
+    color: var(--primaryColor);
+    font-weight: 700;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.lowerContainer p {
+    color: var(--mainDark);
+    font-size: 0.75rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.cardBtn {
+    margin: 1rem;
+    margin-top: 0;
+    color: var(--mainDark);
+    font: bold;
+    background-color: var(--mainWhite);
+    border: 2px solid var(--primaryColor);
+    padding: 0.6rem;
+    border-radius: 5px;
+    cursor: pointer;
+    animation-duration: 0.5s;
+    transition: ease-in-out;
+}
+
+.cardBtn:hover {
+    background-image: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    transform: scale(1.1);
+    border: none;
+    color: var(--mainWhite);
+}
+
+@media (max-width: 568px) {
+    .imageContainer img {
+        transform: translate(33.5%, 50px);
+    }
+}

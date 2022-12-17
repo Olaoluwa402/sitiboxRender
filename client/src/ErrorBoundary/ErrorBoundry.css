@@ -1,0 +1,9 @@
+.errorBoundry{
+	width: 75%;
+	margin: 3rem auto;
+}
+
+.errorBoundry p{
+	color: #e74c3c;
+	font-size: 1.3rem;
+}

@@ -1,0 +1,28 @@
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    height: 80px;
+    width: 100%;
+    background-color: #00008B;
+    padding: 0.6rem 0.9rem;
+}
+
+.inputGroup {
+    flex: 1;
+    padding: 0.4rem 0;
+}
+
+.formContainer input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+.formIcons {
+    font-size: 2.2rem;
+    color: var(--offWhite);
+    margin-right: .5rem;
+}
+
+.join {
+    padding: 0.8rem;
+}

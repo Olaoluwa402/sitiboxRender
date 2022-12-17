@@ -1,0 +1,21 @@
+.backContainer{
+    position: relative;
+ }
+
+ .back{
+    position: absolute;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--mainWhite);
+    font-size: 0.6rem;
+    font-weight: bold;
+    background-color: #000;
+    padding: 4px 20px;
+    text-decoration: none;
+ }
+
+ .arrowLeft{
+    margin-right: 5px;
+ }

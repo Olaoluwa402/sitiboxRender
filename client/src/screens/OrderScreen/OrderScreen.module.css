@@ -1,0 +1,286 @@
+/* chat box */
+.chatPanel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 2.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.9rem;
+  padding: 2rem 0.5rem;
+  /* background: var(--mainGrey); */
+}
+
+.chatPanel span {
+  text-transform: capitalize;
+}
+
+/* end of chat box styling */
+
+.container {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .title__wrapper > .title {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.container > .title__wrapper > .paid {
+  width: 150px;
+  margin: 0 auto;
+  border: 1px solid #00ffcc;
+  background-color: #00ffcc;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container > .first__section {
+  display: flex;
+  padding: 1rem;
+  margin: 50px 0;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  flex-wrap: wrap;
+}
+
+.container > .first__section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container > .second__section h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.container > .first__section > .left {
+  flex: 1;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-right: 20px;
+}
+
+.container .paid {
+  width: 150px;
+  border: 1px solid #00ffcc;
+  background-color: #00ffcc;
+  padding: 0.8rem;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.container .notPaid {
+  width: 150px;
+  border: 1px solid rgb(59, 7, 7);
+  background-color: rgb(59, 7, 7);
+  padding: 0.8rem;
+  margin-bottom: 5px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+.btnBox {
+  margin-top: 0.8rem;
+  padding: 0.5rem;
+  background-color: var(--mainWhite);
+  box-shadow: var(--shadow);
+}
+
+.btn {
+  display: inline-block;
+  width: 180px;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  background: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+  padding: 0.8rem 1.3rem;
+  border: 3px solid var(--primaryColor);
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--primaryColor);
+  transform: scale(0.95);
+  border: none;
+  color: var(--mainWhite);
+}
+
+.container > .first__section > .right {
+  flex: 1;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 0.5rem;
+
+  position: relative;
+}
+
+.complaintImg {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  width: 100px;
+}
+
+.container > .first__section > .right > .complaint > div > p,
+.container > .first__section > .left p
+ {
+  text-transform: capitalize;
+  color:rgb(105, 102, 102);
+}
+
+.container > .second__section {
+  display: flex;
+  padding: 1rem;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+
+.container > .second__section > .left {
+  flex: 1;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-right: 20px;
+}
+
+.container > .second__section > .left > .consultOrder {
+  display: flex;
+  flex-direction: column;
+}
+
+.container > .second__section > .left > .consultOrder > p {
+  text-transform: capitalize;
+  color:rgb(105, 102, 102);
+}
+.container > .second__section > .right {
+  flex: 1;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-right: 20px;
+}
+
+.container > .second__section > .right > .imgBox {
+  padding: 0.5rem;
+  flex: 1;
+  /* text-align: center; */
+}
+
+.container > .second__section > .right > .imgBox > img {
+  border-radius: 10px;
+}
+
+.box2LeftMain {
+  margin-bottom: 2rem;
+}
+
+.comBox {
+  flex: 1;
+}
+
+.rate {
+  color: var(--primaryColor);
+  font-style: italic;
+}
+
+.chatBox {
+  font-size: 3.5rem;
+  color: var(--primaryColor);
+  animation: pulse 2s infinite;
+}
+
+/* start animation */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 139, 0.99);
+  }
+
+  70% {
+    box-shadow: 0 0 0 2rem rgba(0, 0, 139, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 0, 139, 0);
+  }
+}
+
+/* @media screen */
+
+@media screen and (max-width: 678px) {
+  .container > .first__section{
+    flex-direction: column;
+  }
+  .container > .second__section{
+    flex-direction: column;
+  }
+
+  
+.container > .first__section > .left {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+
+.container > .second__section > .right {
+  margin-right: 0;
+}
+
+.container > .second__section > .left {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
+  .consultOrder {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 100%;
+  }
+
+  .container > .first__section h2 {
+    font-size: 0.9rem;
+  }
+  
+  .container > .second__section h2 {
+    font-size: 0.9rem;
+  }
+
+  .container .paid {
+   
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+  
+  .container .notPaid {
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .btn{
+    
+    padding: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .container > .second__section > .right > .imgBox {
+    padding: .1rem;
+  }
+
+  .complaintImg {
+    width: 50px;
+  }
+}

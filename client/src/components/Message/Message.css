@@ -1,0 +1,17 @@
+.defaultMessage,
+.dangerMessage {
+    width: 100%;
+    max-width: 500px;
+    height: 80px;
+    padding: 1.2rem;
+    border: 2px solid #0fc;
+    background-color: #0fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dangerMessage {
+    border: 2px solid #f99;
+    background-color: #f99;
+}

@@ -1,0 +1,26 @@
+.formContainer{
+	display: flex;
+    margin-top: 2rem;
+}
+
+.formContainer iframe{
+    width: 100%;
+    height: 950px;
+}
+
+.patientForm{
+    flex: 1;
+    text-align: center;
+}
+
+.doctorForm{
+    flex:1;
+    text-align: center;
+}
+
+@media (max-width:800px){
+    .formContainer{
+        flex-direction: column;
+    }
+    
+}

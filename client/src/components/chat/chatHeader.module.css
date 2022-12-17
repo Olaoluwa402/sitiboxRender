@@ -1,0 +1,51 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background: #00008B;
+    color: var(--mainWhite);
+    padding: .6rem .9rem;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.chatInfo {
+    margin-left: 0.5rem;
+}
+
+.chatInfo h5{
+    text-transform: capitalize;
+}
+
+.roomUsers{
+    list-style-type: none;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roomUsers li{
+    margin-right: 1.5rem;
+    text-transform: capitalize;
+}
+
+.roomUsers li span{
+    display: inline-block;
+    width:10px;
+    height: 10px;
+    border-radius:50px;
+    background: #66ff00;
+    margin-right: 0.2rem;
+}
+
+.arrowLeft,
+.chatVideo {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--mainWhite);
+}

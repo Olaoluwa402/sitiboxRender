@@ -1,0 +1,132 @@
+.container{
+    display: flex;
+    width:100%;
+}
+
+.container > .left{
+    flex: 1;
+    margin-right: 15px;
+}
+
+.container > .right{
+    flex: 1;
+}
+.loginscreenWrapper {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginHeader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginHeader h3{
+    color: var(--primaryColor);
+    font-size:1.3rem;
+}
+
+.loginHeader img {
+    max-width: 80%;
+}
+
+.loginformWrapper {
+    width: 450px;
+    margin:0 auto;
+    background-image: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    padding: 2.5rem 2rem;
+    box-shadow: var(--darkShadow);
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.loginForm .formControl {
+    display: flex;
+    /* flex-direction: column; */
+}
+
+.loginForm input {
+    flex: 1;
+    padding: 0.6rem;
+    margin-bottom: 0.8rem;
+}
+
+.loginForm .loginIcons {
+    font-size: 1.8rem;
+    color: var(--mainDark);
+    margin-right: 0.4rem;
+}
+
+.formActions button {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+
+.formActions button:hover,
+.formActions button:focus {
+    background: var(--skyBlue);
+    border: 1px solid var(--mainWhite);
+    color: var(--primaryColor);
+}
+
+.loginLink {
+    color: var(--mainWhite);
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+@media (max-width:1099px){
+    .loginformWrapper {
+        width: 350px;
+        padding: 2rem 1.5rem;
+    } 
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .loginscreenWrapper {
+        flex-direction: column;
+    }
+
+    .loginHeader img {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .loginformWrapper {
+        width: 80%;
+        padding: 3rem 2.5rem;
+    }
+}
+
+@media (max-width: 568px) {
+    .loginscreenWrapper {
+        margin: 25px auto;
+    }
+
+    .loginformWrapper {
+        width: 94%;
+        padding: 2rem 1rem;
+    }
+
+    .loginHeader img {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,23 @@
+.messages {
+	min-width: 100px;
+	max-width: 70%;
+    padding: 0.8rem;
+    margin: 0.2rem;
+    border-radius: 8px;
+    position:relative;
+}
+
+.timestamp{
+	position:absolute;
+	bottom: 0;
+	right:0.4rem;
+	font-size:.7rem;
+	font-weight:bold;
+}
+
+.dateStamp{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: .5rem;
+}

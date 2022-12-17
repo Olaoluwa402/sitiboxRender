@@ -1,0 +1,159 @@
+ .newReferralScreen {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.referralformWrapper {
+    background-image: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    box-shadow: var(--darkShadow);
+    border-radius: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.newReferralHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.referralForm {
+    width: 100%;
+    padding: 2rem;
+}
+
+.referralForm .formControl {
+    display: flex;
+    flex-direction: column;
+}
+
+.formControl p {
+    color: #b70000;
+}
+
+.referralForm input,
+.referralForm select {
+    flex: 1;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.formActions button {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+
+.formActions button:hover,
+.formActions button:focus {
+    background: var(--skyBlue);
+    border: 1px solid var(--mainWhite);
+    color: var(--primaryColor);
+}
+
+/*preview*/
+
+.referralBox {
+    max-width: 600px; 
+    margin: auto;
+    padding: 30px;
+    border: 1px solid #eee;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Helvetica Neue", "Helvetica";
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.referralBox .topRow{
+    background: var(--primaryColor);
+}
+
+.referralBox .title h2,
+.referralBox .title p{
+    font-size: 0.9rem;
+    color:var(--mainWhite);
+}
+
+.margin-top {
+    margin-top: 50px;
+}
+.justifyCenter {
+    text-align: center;
+}
+.referralBox table {
+    width: 100%;
+    line-height: inherit;
+    text-align: left;
+}
+.referralBox table td {
+    padding: 5px;
+    vertical-align: top;
+}
+.referralBox table tr td:nth-child(2) {
+    text-align: right;
+}
+.referralBox table tr.top table td {
+    padding-bottom: 20px;
+}
+.referralBox table tr.top table td.title {
+    font-size: 45px;
+    line-height: 45px;
+    color: #333;
+}
+.referralBox table tr.information table td {
+    padding-bottom: 40px;
+}
+.referralBox table tr.patientInfo table td {
+    padding-top: 120px;
+}
+.referralBox table tr.heading td {
+    background: var(--primaryColor);
+    border-bottom: 1px solid #ddd;
+    font-weight: bold;
+}
+.referralBox table tr.details td {
+    padding-bottom: 20px;
+}
+.referralBox table tr.item td {
+    border-bottom: 1px solid #eee;
+}
+.referralBox table tr.item.last td {
+    border-bottom: none;
+}
+.referralBox table tr.total td:nth-child(2) {
+    border-top: 2px solid #eee;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .referralBox table tr.top table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .referralBox table tr.information table td {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+}

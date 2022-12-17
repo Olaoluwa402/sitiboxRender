@@ -1,0 +1,166 @@
+.wrapper {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem;
+    margin: 20px auto;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+}
+
+.wrapper p {
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    color:rgb(105, 102, 102);
+    font-size: 0.9rem;
+}
+
+.wrapper h2 {
+    margin-bottom: .7rem;
+    font-size: 1.6rem;
+}
+
+.leftCol {
+    margin-right: 1.5rem;
+    flex:1;
+    padding: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+}
+
+.imgBox { 
+    padding: 1rem;
+    background: var(--primaryColor);
+    width: 250px;
+    height:250px;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+ 
+.imgBox img {
+    width: 100%;
+    height:100%;
+    border: 2px solid var(--mainWhite);
+    object-fit:cover;
+}
+
+.rightCol {
+    flex:1;
+    padding: 1rem;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+}
+
+.iconWrapper{
+    display: flex;
+    align-items: center;
+}
+
+.iconWrapper h2{
+    margin-top: 0.5rem; 
+}
+
+.iconWrapper .icons{
+    font-size: 1.8rem;
+    color: var(--primaryColor);
+}
+.btnBox {
+    width: 250px;
+    margin-top: 0.8rem;
+    padding: 0.9rem 0.9rem;
+    background-color: var(--mainWhite);
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+}
+
+.btn {
+    display: inline-block;
+    width: 100%;
+    text-decoration: none;
+    letter-spacing: var(--mainSpacing);
+    color: var(--mainWhite);
+    background: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    padding: 0.8rem 1.3rem;
+    border: 3px solid var(--primaryColor);
+    transition: var(--mainTransition);
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    background: var(--primaryColor);
+    transform: scale(0.9);
+    border: none;
+    color: var(--mainWhite);
+}
+
+/* @media screen */
+
+@media screen and (max-width: 1150px) {
+    .wrapper {
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 960px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .iconWrapper h2{
+        margin-top: 0.5rem; 
+        font-size: 1rem;
+    }
+    
+    .iconWrapper .icons{
+        font-size: 1.2rem;
+        color: var(--primaryColor);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        flex-direction: column; 
+        padding: 2rem .2rem;
+        align-items: center;
+    }
+
+    .wrapper h2 {
+        font-size: 1.6rem;
+    }
+    .rightCol{
+        margin-top: 2rem;
+    }
+
+    .imgBox { 
+        padding: 1rem;
+        width: 300px;
+        height:300px;
+    }
+ 
+    .btnBox{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        border:none;
+    }
+
+    .imgBox { 
+        padding: 1rem;
+        width: 250px;
+        height:250px;
+    }
+
+    .btnBox{
+        width: 250px;
+    }
+
+}

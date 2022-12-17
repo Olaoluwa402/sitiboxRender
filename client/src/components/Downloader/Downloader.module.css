@@ -1,0 +1,57 @@
+.downloader {
+  width: 500px;
+  min-height: 128px;
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  max-height: 700px;
+  overflow-y: auto;
+}
+.downloader .cardHeader {
+  color: #fff;
+  background-color: var(--primaryColor);
+}
+.downloader .card .listGroup {
+  max-height: 300px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.dInline{
+	display: inline-block;
+	margin-left: 2px;
+}
+
+.col12{
+	display: flex;
+	width: 100%;
+	margin-top:2px;
+}
+
+.textSuccess{
+	color:green;
+}
+
+
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px 0;
+	height: 30px;
+	width: 300px;
+}
+
+.progressDone {
+	background: linear-gradient(to left, #F2709C, #FF9472);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100%;
+	width: 0;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}

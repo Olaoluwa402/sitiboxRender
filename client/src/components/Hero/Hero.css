@@ -1,0 +1,13 @@
+.defaultHero,
+.consultantHero {
+    min-height: calc(100vh - 3.5rem);
+    background: url("../../img/doctors2.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.consultantHero {
+    background-image: url("../../img/doctors2.jpg");
+    min-height: 60vh;
+}

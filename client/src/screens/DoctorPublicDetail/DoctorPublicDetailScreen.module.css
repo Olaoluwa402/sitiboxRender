@@ -1,0 +1,132 @@
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+     background-color: ;
+}
+ 
+.wrapper .left {
+    width: 35%;
+    background: linear-gradient(to right, #01a9ac, var(--primaryColor));
+    padding: 30px 25px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    color: #fff;
+}
+
+.wrapper .left img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.wrapper .left h4 {
+    margin-bottom: 10px;
+}
+
+.wrapper .left p {
+    font-size: 12px;
+}
+
+.wrapper .right {
+    width: 65%;
+    background: #fff;
+    padding: 30px 25px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.right h2{
+    text-align:center;
+    font-size:2.5rem;
+}
+
+.wrapper .right .info,
+.wrapper .right .projects {
+    margin-bottom: 25px;
+}
+
+.wrapper .right .info h3,
+.wrapper .right .projects h3 {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.wrapper .right .infoData,
+.wrapper .right .projectsData {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrapper .right .infoData .data,
+.wrapper .right .projectsData .data {
+    width: 45%;
+}
+
+.wrapper .right .infoData .data h4,
+.wrapper .right .projectsData .data h4 {
+    color: #353c4e;
+    margin-bottom: 5px;
+}
+
+.wrapper .right .infoData .data p,
+.wrapper .right .projectsData .data p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    color: #919aa3;
+}
+
+.wrapper .socialMedia ul {
+    display: flex;
+}
+
+.wrapper .socialMedia ul li {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(to right, #01a9ac, var(--primaryColor));
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 45px;
+}
+
+.wrapper .socialMedia ul li a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+   .wrapper{
+    flex-direction: column;
+   }
+
+   .right h2{
+        text-align:center;
+        font-size:1.5rem;
+        margin-bottom: 0.8rem;
+    }
+
+   .wrapper .right{
+    width:80%;
+   }
+   .wrapper .left{
+    width:80%;
+   }
+}
+
+@media (max-width: 520px){
+    .wrapper .right{
+        width:95%;
+       }
+   .wrapper .left{
+        width:95%;
+       }
+}

@@ -1,0 +1,289 @@
+/* ############### floating social icon ####################################*/
+
+.fabContainer {
+  position: fixed;
+  top: 450px;
+  right: 10px;
+  z-index: 999;
+  cursor: pointer;
+}
+.fabIconHolder {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: var(--primaryColor);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.fabIconHolder:hover {
+  opacity: 0.8;
+}
+.fabIconHolder .fas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: #ffff;
+  font-size: 2rem;
+}
+.fabb {
+  background: #d23f31;
+}
+.fabOptions {
+  list-style-type: none;
+  margin: 0;
+  position: absolute;
+  top: -180px;
+  right: 0;
+  opacity: 0;
+
+  transition: all 0.3s ease;
+  transform: scale(0);
+  transform-origin: 85% bottom;
+}
+
+.fabb:hover + .fabOptions,
+.fabOptions:hover {
+  opacity: 1;
+  transform: scale(1);
+}
+.fabOptions li {
+  display: flex;
+  justify-content: flex-end;
+  padding: 5px;
+}
+.fabLabel {
+  padding: 2px 5px;
+  align-self: center;
+  user-select: none;
+  white-space: nowrap;
+  border-radius: 3px;
+  font-size: 16px;
+  background: #666666;
+  color: var(--mainWhite);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+}
+
+/* ########################## End of floating icons ######################## */
+
+/*navbar*/
+.narbarOuter__wrapper {
+  background-color: transparent;
+  color: #333;
+  position: relative;
+}
+
+.bcg {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 8rem;
+  background-color: #f4f9fc;
+  width: 580px;
+  height: 780px; 
+}
+
+.navbarInner__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.menuToggler {
+  width: 5rem;
+  height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  z-index: 1500;
+  transition: all 650ms ease-out;
+}
+
+.bar {
+  background: linear-gradient(to right, #ffe838, #fd57bf);
+  width: 100%;
+  height: 4px;
+  border-radius: 0.8rem;
+}
+
+.bar.half {
+  width: 50%;
+}
+
+.bar.start {
+  transform-origin: right;
+  transition: all 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.bar.end {
+  align-self: flex-end;
+  transform-origin: left;
+  transition: all 650ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+}
+
+.navbar__left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__left > .navBarLink {
+  margin-right: 10px;
+}
+
+.navbarInner__wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbarInner__wrapper ul li {
+  margin-left: 0.8rem;
+  list-style-type: none;
+}
+
+.navBarLink {
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.navBarLink:hover {
+  color: var(--primaryColor);
+}
+
+.navbar__brandlink {
+  font-size: 2.5rem;
+  margin-right: 10px;
+}
+
+.navbar__brandlink img {
+  width: 150px;
+  height: 54px;
+}
+
+.navbar__rightlink {
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.loginIcon {
+  padding-top: 3px;
+}
+.dropbtn {
+  min-width: 80px;
+  text-align: center;
+  background-color: var(--primaryColor);
+  color: var(--mainWhite);
+  padding: 16px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 7px;
+  outline: none;
+}
+
+.dropbtn:disabled {
+  background-color: #a6a6a6;
+  cursor: not-allowed;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  text-align: center;
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  font-size: 0.7rem;
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdownContent a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdownContent {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--skyBlue);
+}
+
+.mode {
+  display: block;
+  color: #66ff00;
+  font-size: 0.4rem;
+  font-weight: bold;
+}
+
+@media (max-width:1000px){
+    
+}
+
+@media (max-width: 875px) {
+  .navbar__left {
+    display: none;
+  }
+
+  .navbarInner__wrapper ul li:nth-child(-n + 2) {
+    display: none;
+  }
+
+  .navbar__brandlink {
+    margin-right: 3px;
+  }
+
+  .navbar__brandlink img {
+    width: 100px;
+    height: 47px;
+  }
+  .bcg {
+    display: none;
+  }
+}
+
+@media (max-width: 568px) {
+  .dropdownContent {
+    text-align: center;
+    min-width: 80px;
+  }
+
+  .navbar__brandlink {
+    font-size: 1.5rem;
+    margin-right: 3px;
+  }
+
+  .menuToggler {
+    width: 3rem;
+    height: 2rem;
+  }
+
+  .bar {
+    height: 2px;
+  }
+
+  .navbar__rightlink {
+    font-size: 0.8rem;
+  }
+
+  .dropbtn {
+    padding: 8px;
+  }
+}

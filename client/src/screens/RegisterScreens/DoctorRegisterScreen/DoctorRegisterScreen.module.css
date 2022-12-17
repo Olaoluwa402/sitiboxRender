@@ -1,0 +1,186 @@
+.container{
+    display: flex;
+    width:100%;
+}
+
+.container > .left{
+    flex: 1;
+    margin-right: 15px;
+}
+
+.container > .right{
+    flex: 1;
+}
+.registerScreen {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.registerformWrapper {
+    background-image: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    box-shadow: var(--darkShadow);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.registerHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.registerForm {
+    width: 100%;
+    padding: 2rem;
+} 
+
+.registerForm .formControl {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.2rem;
+} 
+
+.formControl label {
+    color: #ffffff;
+}
+
+.formControl p {
+    color: #b70000;
+     padding: 0;
+    margin: 0;
+}
+
+.birth{
+    display: inline-block;
+    background: #fff;
+    width: 100;
+    height: 100;
+    border-radius: 10px;
+    padding: .8rem;
+    color:#333333;
+}
+
+
+.registerForm input,
+.registerForm select {
+    flex: 1;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+}
+
+.formActions button {
+    width: 100%;
+    margin-top: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--primaryColor);
+    color: var(--mainWhite);
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all ease-in 1s;
+}
+
+.formActions button:hover,
+.formActions button:focus {
+    background: var(--skyBlue);
+    border: 1px solid var(--mainWhite);
+    color: var(--primaryColor);
+}
+
+.loginLink {
+    color: var(--mainYellow);
+}
+
+.info{
+    color:yellow;
+    font-size: 0.7rem;
+}
+
+.textBox{
+	display: flex;
+	flex-direction: column;
+	margin-top: 1rem;
+}
+.selectBox{
+	display: flex;
+	justify-content: stretch;
+	align-items:center;
+}
+
+.selectBox select{
+	flex: 1;
+}
+
+.flagImg{
+	width: 60px;
+	margin-top:-1rem;
+}
+
+.registerForm #phoneInput{
+	flex:1;
+}
+.registerForm #phoneInput{
+	width:60px;
+}
+
+.hr{
+    margin: 1.5rem 0;
+}
+
+@media (max-width:1099px){
+    .loginformWrapper {
+        width: 350px;
+        padding: 2rem 1.5rem;
+    } 
+}
+
+@media (max-width: 768px) {
+    .container{
+        flex-direction: column;
+    }
+    .registerscreenWrapper {
+        flex-direction: column;
+    } 
+
+    .registerHeader img {
+        max-width: 90%;
+        margin: auto;
+    }
+
+    .registerformWrapper {
+        width: 80%;
+        padding: 3rem 2.5rem;
+    }
+}
+
+@media (max-width: 568px) { 
+    .registerscreenWrapper {
+        margin: 25px auto;
+    }
+
+    .registerHeader h2{
+        font-size: 1.2rem;
+    }
+
+    .registerformWrapper {
+        width: 95%;
+        padding: 1.5rem;
+    }
+
+    .registerForm{
+        padding: 0;
+    }
+
+}

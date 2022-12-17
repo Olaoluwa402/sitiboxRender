@@ -1,0 +1,198 @@
+/*#prescription{
+	width:587px;
+	height: 834px;
+}*/
+
+/*.wrapper{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-auto-rows: minmax(100px, auto);
+	margin-top: 60px;
+}
+
+.download{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.download button{
+	padding: 0.4rem 1.6rem;
+	background: transparent;
+	font-size: 1.3rem;
+	color:var(--primaryColor);
+	border: 2px solid var(--primaryColor);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 1s ease-out;
+}
+
+.download button:hover,
+.download button:focus
+{
+	color: green;
+	border: 2px solid green;
+}
+
+.container{
+	width:70%;
+	margin: 0 auto; 
+}
+
+.presHeader{
+	background: var(--primaryColor);
+	color: var(--mainWhite);
+}
+
+.presHeader__left{
+	line-height: 2rem;
+}
+
+.headerContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 3rem 0;
+}
+
+.bodyContainer{
+	padding: 4rem 0;
+}
+.presBody{
+	background: #ffffff;
+}
+
+.presBodyTop{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2rem 0;
+	line-height: 2;
+}
+
+.presDetail{
+	padding-top: 3rem;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+
+.presDetailBottom{
+	padding-top: 1.8rem;
+}
+
+.presFooter{
+	background: var(--primaryColor);
+	color:#f3f3f3;
+}
+ 
+.footerContainer{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.2rem;
+}*/
+
+@page {
+	size: A4 landscape;
+	margin-top: 8px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.invoiceBox {
+	max-width: 600px;
+	margin: auto;
+	padding: 30px;
+	border: 1px solid #eee;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+	font-size: 16px;
+	line-height: 24px;
+	font-family: "Helvetica Neue", "Helvetica";
+	color: #555;
+	margin-bottom: 3rem;
+}
+.margin-top {
+	margin-top: 50px;
+}
+.justifyCenter {
+	text-align: center;
+}
+.invoiceBox table {
+	width: 100%;
+	line-height: inherit;
+	text-align: left;
+}
+.invoiceBox table td {
+	padding: 5px;
+	vertical-align: top;
+}
+.invoiceBox table tr td:nth-child(2) {
+	text-align: right;
+}
+.invoiceBox table tr.top table td {
+	padding-bottom: 20px;
+}
+.invoiceBox table tr.top table td.title {
+	font-size: 45px;
+	line-height: 45px;
+	color: #333;
+}
+.invoiceBox table tr.information table td {
+	padding-bottom: 40px;
+}
+.invoiceBox table tr.heading td {
+	background: #eee;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+}
+.invoiceBox table tr.details td {
+	padding-bottom: 20px;
+}
+.invoiceBox table tr.item td {
+	border-bottom: 1px solid #eee;
+}
+.invoiceBox table tr.item.last td {
+	border-bottom: none;
+}
+.invoiceBox table tr.total td:nth-child(2) {
+	border-top: 2px solid #eee;
+	font-weight: bold;
+}
+
+.download{
+	margin: 3rem 0;
+	display:flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.download button{
+	padding: 0.4rem 1.6rem;
+	background: transparent;
+	font-size: 1.3rem;
+	color:var(--primaryColor);
+	border: 2px solid var(--primaryColor);
+	border-radius: 5px;
+	cursor: pointer;
+	transition: all 1s ease-out;
+}
+
+.download button:hover,
+.download button:focus
+{
+	color: green;
+	border: 2px solid green;
+}
+
+@media only screen and (max-width: 600px) {
+	.invoiceBox table tr.top table td {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+	.invoiceBox table tr.information table td {
+		width: 100%;
+		display: block;
+		text-align: center;
+	}
+}

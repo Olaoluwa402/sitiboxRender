@@ -1,0 +1,12 @@
+.notFound{
+	height: 80vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3rem;
+}
+
+.notFound h1{
+	color:#000000;
+	font-size: 1.8rem;
+}

@@ -1,0 +1,12 @@
+.consultantProfiles {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 2.5rem auto;
+}
+
+@media (max-width: '570px'){
+	.consultantProfiles{
+		grid-template-columns: 1fr;
+	}
+}

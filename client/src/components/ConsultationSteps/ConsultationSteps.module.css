@@ -1,0 +1,28 @@
+.stepsContainer {
+    margin: 1.5rem 0;
+}
+
+.stepsContainer ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.stepsContainer ul li {
+    margin: 0 0.8rem;
+}
+
+.stepsContainer ul li a {
+    text-decoration: none;
+}
+
+.steps{
+	font-size: .9rem;
+	font-weight: bold;
+}
+
+.disabled {
+    pointer-events: none;
+    color: var(--mainDark);
+}

@@ -1,0 +1,46 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    padding:0 0.3rem;
+}
+
+.info > h4{
+    font-size: 1.5rem;
+    margin-bottom: 50px;
+    color:var(--primaryColor)
+}
+
+.info > ul{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.info > ul > li > div{
+    display: flex;
+    align-items: center;
+    line-height: 2;
+}
+
+.info > ul > li > div > .icons{
+    margin-right: 10px;
+    font-size: 1.1rem;
+    color:blue;
+}
+
+@media (max-width:500px){
+    .info > h4{
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    .info > ul > li > div > p{
+        font-size: 0.8rem;
+    }
+
+    .info > ul > li > div > .icons{
+        font-size: 0.9rem;
+    }
+}

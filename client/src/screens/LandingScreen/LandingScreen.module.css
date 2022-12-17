@@ -1,0 +1,301 @@
+
+/*animate*/
+.animateContainer{
+    padding: 0.3rem .8rem;
+    background: var(--mainYellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.animateWelcome{
+    text-transform: uppercase;
+    color:var(--primaryColor);
+    font-weight: bold;
+   /* display: inline-block;*/
+    white-space: nowrap;
+    animation: welcome 25s infinite linear;
+    padding-left: 100%;
+}
+
+@keyframes welcome {
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+/*page wrapper */
+.container {
+    width: 100%;
+    height: auto;
+}
+
+.bcg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    right: 8rem;
+    background-color: #f4f9fc;
+    width: 580px;
+    height: 814px; 
+  }
+
+.container > .hero{ 
+    padding: 2.5rem;
+    display: flex;
+}
+
+.container > .hero > .hero__left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    line-height: 1.5;
+    padding: 3.5rem 1.5rem;
+}
+
+.container > .hero .hero__left h1{
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 900;
+    margin-bottom: 1.5rem;
+}
+
+.container > .hero .hero__left p {
+    font-size: 1.2rem;
+    margin-bottom: 1.4rem;
+}
+
+.container > .hero .hero__left .btn {
+    padding: 0.8rem 1.6rem;
+    font-size: 0.9rem;
+    background: var(--primaryColor);
+    color: var(--mainWhite);
+    outline: none;
+    border: 2px solid var(--mainWhite);
+    border-radius: 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out; 
+    cursor: pointer;
+}
+
+.container > .hero .hero__left .btn:disabled {
+    background-color: #a6a6a6;
+    cursor: not-allowed;
+  }
+
+.btn:hover {
+    background-image: linear-gradient(to left, var(--primaryColor), var(--mainYellow));
+    transform: scale(1.1);
+    border: none;
+    color: var(--mainWhite);
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+}
+
+.container > .hero > .hero__right{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container > .hero > .hero__right img{
+   width: 450px;
+   height: 680px;
+}
+
+.icons{
+    font-size: 0.9rem;
+}
+
+/* arrow down */
+.headerLink{
+    position: absolute;
+    bottom: 7%;
+    left: 40%;
+    width:250px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background:var(--primaryColor);
+    color:var(--mainWhite);
+    border-radius: 50px;
+    transition:  all 1s ease;
+    animation: fromBottom;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.headerLink:hover{
+    color: var(--mainWhite);
+    background: #da655a;
+    border: 2px solid var(--mainWhite);
+}
+
+@keyframes fromBottom {
+    0%{
+        transform: translateY(-10px);
+    }
+    50%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+/* end of arrow down */
+
+/* benefits styling */ 
+    .benefitsContainer{
+        width: 100%;
+        padding: 1rem;
+        border-radius: 20px;
+        background:
+    linear-gradient(
+      rgba(245, 245, 245, 0.95), 
+      rgba(245, 245, 245, 0.95)
+    ),
+    url(../../img/background3.webp);
+    background-repeat: no-repeat;
+    -webkit-background-attachment: fixed;
+    -moz-background-attachment: fixed;
+    -o-background-attachment: fixed;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    }
+    .benefitsContainer > h3{
+    font-family: "Cinzel Decorative", cursive;
+    font-weight: 900;
+        font-size: 1.7rem;
+        text-align: center;
+        margin: 1.5rem 0;
+    }
+
+    .benefitsContainer .benefits{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        
+    }
+
+    .benefitsContainer >  .benefits > .benefit__inner{
+        width: 450px;
+        max-width: 100%;
+        margin: 0 auto;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+    }
+
+    
+    /* .benefitsContainer > .benefits > .benefit__inner img{
+        width: 100%;
+    } */
+
+    .benefitsContainer > .benefits > .benefit__inner > .benefit > h4{
+        color:var(--primaryColor);
+    }
+/* end of benefit styling */
+
+
+/* @media screen */
+
+@media (max-width:1000px){
+    .container > .hero{ 
+        padding: 1.5rem;
+    }
+    
+    .container > .hero > .hero__left{
+        padding: 2.5rem 1rem;
+    }
+}
+
+
+@media (max-width: 875px) {
+    .bcg {
+      display: none;
+    }
+  }
+
+@media (max-width:896px){
+    .container > .hero{ 
+        flex-direction: column;
+    }
+    
+    .container > .hero .hero__left h1{
+        font-size:1.5rem;
+    }
+    
+    .container > .hero .hero__left p {
+        font-size: 1rem;
+        margin-bottom: 1.4rem;
+    } 
+}
+
+@media screen and (max-width: 768px) {
+    .container > .hero{ 
+        padding: 0.5rem;
+    }
+
+    .benefitsContainer .benefits{
+        flex-direction: column;
+        padding: 0 2.5rem;
+    }
+
+    .benefitsContainer > h3{
+            font-size: 1.2rem;
+           
+        }
+  
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100%;
+    }
+
+    .container > .hero .hero__left h1{
+        font-size:1rem;
+    }
+    
+    .container > .hero .hero__left p {
+        font-size: .8rem;
+        margin-bottom: 1.4rem;
+    }
+    .headerLink{
+        left: 22%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+   
+    .benefitsContainer > .benefits > .benefit__inner{
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+   
+    .headerLink{
+        left: 10%;
+    }
+
+}

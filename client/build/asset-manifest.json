@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/static/css/main.567f864c.css",
+    "main.js": "/static/js/main.ce472a26.js",
+    "static/js/498.587cec44.chunk.js": "/static/js/498.587cec44.chunk.js",
+    "static/js/703.b505d939.chunk.js": "/static/js/703.b505d939.chunk.js",
+    "static/js/513.0d53f726.chunk.js": "/static/js/513.0d53f726.chunk.js",
+    "static/media/cover.png": "/static/media/cover.1b5e32babb56e1b445ab.png",
+    "pdf.worker.js": "/6294a0314b5b0a452490ef1b4f867c35.js",
+    "static/media/eunice.png": "/static/media/eunice.ac5f73f57f964c17ca87.png",
+    "static/media/tunde.png": "/static/media/tunde.94a602ed7a4c2829dfbd.png",
+    "static/media/SitiboxLOGO-min.png": "/static/media/SitiboxLOGO-min.f29a2dcf477f3c5889fc.png",
+    "static/media/daniel.png": "/static/media/daniel.0dd8d3d48dfc3e1e1585.png",
+    "static/media/doctors2.jpg": "/static/media/doctors2.08c0440940b839b6a513.jpg",
+    "static/media/background3.webp": "/static/media/background3.7d4730adae830608d022.webp",
+    "static/media/access.png": "/static/media/access.c7ef2342b4f3e3c06dce.png",
+    "static/media/clock.png": "/static/media/clock.697cd26718e8a2672b5e.png",
+    "static/media/ePrescribe1.png": "/static/media/ePrescribe1.4b7bed95c9b731f173b6.png",
+    "static/media/referral3.png": "/static/media/referral3.d0921bf0db3b9d439336.png",
+    "static/media/doctor-select.png": "/static/media/doctor-select.43c009c561e7302874a1.png",
+    "static/media/complaintbox.png": "/static/media/complaintbox.eddc9ba5f586877d7ccb.png",
+    "static/media/access4.png": "/static/media/access4.621ece0429882560d48b.png",
+    "static/media/avatar.png": "/static/media/avatar.c9034bb506157e8b0738.png",
+    "static/media/files.png": "/static/media/files.da7d2348ecb0d9199f61.png",
+    "static/media/female-doctor.jpg": "/static/media/female-doctor.bc26f354c95318a3fdde.jpg",
+    "static/media/secure.png": "/static/media/secure.4fc90833061c2a6617ba.png",
+    "static/media/record2.png": "/static/media/record2.93c2831b7c2abb54eef0.png",
+    "static/media/affordable.png": "/static/media/affordable.480b3db828a4e639eea4.png",
+    "static/media/presbox.png": "/static/media/presbox.c5222a45cac5aea6419e.png",
+    "static/media/create-consult.png": "/static/media/create-consult.3ca8cbe9d6a9cc0a3014.png",
+    "static/media/avatar.svg": "/static/media/avatar.1a84bdf0618d94b9baafe4fcdced2776.svg",
+    "index.html": "/index.html",
+    "main.567f864c.css.map": "/static/css/main.567f864c.css.map",
+    "main.ce472a26.js.map": "/static/js/main.ce472a26.js.map",
+    "498.587cec44.chunk.js.map": "/static/js/498.587cec44.chunk.js.map",
+    "703.b505d939.chunk.js.map": "/static/js/703.b505d939.chunk.js.map",
+    "513.0d53f726.chunk.js.map": "/static/js/513.0d53f726.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.567f864c.css",
+    "static/js/main.ce472a26.js"
+  ]
+}

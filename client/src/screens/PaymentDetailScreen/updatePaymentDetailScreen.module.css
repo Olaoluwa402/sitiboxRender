@@ -1,0 +1,39 @@
+.container{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+.addAcct{
+	padding: 1rem;
+}
+
+.addAcct form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.addAcct form input, .addAcct form select{
+	padding: 0.6rem 1.1rem;
+	margin-right: 0.3rem;
+}
+
+.addAcct form button{
+	padding: 0.6rem 1.1rem;
+	color:#fff;
+	background: var(--primaryColor);
+	border: none;
+	cursor: pointer;
+}
+
+.addAcct form button:hover{
+	color:var(--primaryColor);
+	background: #fff;
+}
+
+.addAcct p{
+	color: red;
+}
