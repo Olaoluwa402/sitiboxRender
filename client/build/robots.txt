@@ -1,3 +1,7 @@
 # https://www.robotstxt.org/robotstxt.html
-User-agent: *
-Disallow:
+User-agent: Googlebot
+Disallow: /login
+Disallow: /doclogin
+
+
+Sitemap: https://www.sitibox.9jaclinic.com/sitemap.xml
